@@ -23,7 +23,7 @@ def main():
             letter = char["symbol"]
             value = char["quant"]
             print(f"{letter}: {value}")
-        #print(char)
+    print("============= END ===============")
     return
 
 main()

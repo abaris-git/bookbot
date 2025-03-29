@@ -16,6 +16,8 @@ def char_count(text):
 
     return counts
 
+def sort_on(dict):
+    return dict["quant"]
 
 def char_sort_to_list(chars):
     char_list = []
@@ -25,6 +27,6 @@ def char_sort_to_list(chars):
         dictionary["quant"] = chars[char]
        # print(dictionary)
         char_list.append(dictionary)
-    #char_list.sort(key=sort_to)
+    char_list.sort(key=sort_on, reverse=True)
 
     return char_list
