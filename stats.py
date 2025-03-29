@@ -7,19 +7,24 @@ def char_count(text):
     counts = {}
     for s in text:
         glyphs.add(s.lower())
-    print(glyphs)
     for g in glyphs:
         counts[g] = 0
-        #print(glyphs)
     for s in text:
         for g in glyphs:
             if s.lower() == g:
                 counts[g] += 1
 
-
-
-
-
-
-
     return counts
+
+
+def char_sort_to_list(chars):
+    char_list = []
+    for char in chars:
+        dictionary = {}
+        dictionary["symbol"] = char
+        dictionary["quant"] = chars[char]
+       # print(dictionary)
+        char_list.append(dictionary)
+    #char_list.sort(key=sort_to)
+
+    return char_list
